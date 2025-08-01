@@ -12,6 +12,13 @@ document.querySelector('#search-btn').onclick = () =>{
 }
 
 let navbar = document.querySelector('.navbar');
+const menuBtn = document.querySelector('#menu-btn');
+
+if (menuBtn) {
+    menuBtn.onclick = () => {
+        navbar.classList.toggle('active');
+    }
+}
 
 document.querySelector('#menu-btn').onclick = () => {
     navbar.classList.toggle('active');
@@ -38,34 +45,69 @@ function prevSlide(){
 const btn = document.getElementsByClassName('btn1');
 const slide = document.getElementById('slide');
 
-btn[0].onclick = function(){
-    slide.style.transform = 'translateX(0px)';
-    for(var i = 0; i < 4; i++){
-        btn[i].classList.remove('active');
+if (btn.length >= 4 && slide) {
+    btn[0].onclick = function(){
+        slide.style.transform = 'translateX(0px)';
+        for(let i = 0; i < 4; i++){
+            btn[i].classList.remove('active');
+        }
+        this.classList.add('active');
     }
-    this.classList.add('active');
+
+    btn[1].onclick = function(){
+        slide.style.transform = 'translateX(-800px)';
+        for(let i = 0; i < 4; i++){
+            btn[i].classList.remove('active');
+        }
+        this.classList.add('active');
+    }
+
+    btn[2].onclick = function(){
+        slide.style.transform = 'translateX(-1600px)';
+        for(let i = 0; i < 4; i++){
+            btn[i].classList.remove('active');
+        }
+        this.classList.add('active');
+    }
+
+    btn[3].onclick = function(){
+        slide.style.transform = 'translateX(-2400px)';
+        for(let i = 0; i < 4; i++){
+            btn[i].classList.remove('active');
+        }
+        this.classList.add('active');
+    }
 }
 
-btn[1].onclick = function(){
-    slide.style.transform = 'translateX(-800px)';
-    for(var i = 0; i < 4; i++){
-        btn[i].classList.remove('active');
-    }
-    this.classList.add('active');
-}
 
-btn[2].onclick = function(){
-    slide.style.transform = 'translateX(-1600px)';
-    for(var i = 0; i < 4; i++){
-        btn[i].classList.remove('active');
-    }
-    this.classList.add('active');
-}
+// btn[0].onclick = function(){
+//     slide.style.transform = 'translateX(0px)';
+//     for(var i = 0; i < 4; i++){
+//         btn[i].classList.remove('active');
+//     }
+//     this.classList.add('active');
+// }
 
-btn[3].onclick = function(){
-    slide.style.transform = 'translateX(-2400px)';
-    for(var i = 0; i < 4; i++){
-        btn[i].classList.remove('active');
-    }
-    this.classList.add('active');
-}
+// btn[1].onclick = function(){
+//     slide.style.transform = 'translateX(-800px)';
+//     for(var i = 0; i < 4; i++){
+//         btn[i].classList.remove('active');
+//     }
+//     this.classList.add('active');
+// }
+
+// btn[2].onclick = function(){
+//     slide.style.transform = 'translateX(-1600px)';
+//     for(var i = 0; i < 4; i++){
+//         btn[i].classList.remove('active');
+//     }
+//     this.classList.add('active');
+// }
+
+// btn[3].onclick = function(){
+//     slide.style.transform = 'translateX(-2400px)';
+//     for(var i = 0; i < 4; i++){
+//         btn[i].classList.remove('active');
+//     }
+//     this.classList.add('active');
+// }

@@ -126,6 +126,7 @@ input[type='submit']:hover {
 .heading span {
     color: var(--main-color);
     text-transform: capitalize;
+    font-size: 16px;
 }
 
 .heading img {
@@ -220,7 +221,7 @@ input[type='submit']:hover {
     margin-left: 10px;
 }
 
-/*	form container	*/
+/*----------------form container------------------*/
 .form-container {
     display: flex;
     align-items: center;
