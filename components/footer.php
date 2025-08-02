@@ -86,7 +86,7 @@
 
     <div class="bottom">
         <p>Copyright @ 2024 code with all members . ALL RIGTH RESERVERD </p>
-        <a href="../admin panel/login.php"> become a seller</a>
+        <a href="../admin panel/login.php"> <button class="btn">become a seller</button></a>
     </div>
 
 </footer>

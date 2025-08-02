@@ -384,7 +384,7 @@ input[type='submit']:hover {
 }
 
 .header .flex .search-form {
-    width: 30rem;
+    width: 15rem;
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
@@ -568,6 +568,7 @@ input[type='submit']:hover {
 .slider-container .imgBox img {
     width: 100%;
     height: 100vh;
+    object-fit: cover;
 }
 
 .slider-container .textBox h1 {
@@ -2305,7 +2306,28 @@ footer .bottom a:hover {
 
 
 /*--------------media query----------------------*/
-@media (max-width: 991px) {
+
+/*-----------mobile------------*/
+@media (max-width: 767px) {
+
+    body {
+        background-color: #9cb3d3;
+    }
+
+}
+
+/*-----------tablet---------*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: #d39c9c;
+    }
+}
+
+
+
+/*---------------for both---------------*/
+
+@media (max-width: 1023px) {
 
     #search-btn,
     #menu-btn {
@@ -2364,4 +2386,212 @@ footer .bottom a:hover {
     .header .flex .navbar a:hover {
         background-color: var(--feldgrau);
     }
+
+    /*--------heading class--------*/
+    .heading {
+        line-height: 1;
+    }
+
+    .heading h1 {
+        font-size: 22px;
+    }
+
+    /*---------home slider---------*/
+    .slider-container .textBox h1 {
+        font-size: 2rem;
+    }
+
+    .slider-container .controls li {
+        width: 20px;
+        height: 20px;
+    }
+
+    .slider-container .controls i {
+        font-size: 20px;
+    }
+
+    /*--------service------*/
+    .service {
+        padding: 0 0;
+    }
+
+    .service .box-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .service .box-container .box {
+        margin: 4px 0;
+        padding: 8px;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 90vw;
+        align-content: center;
+    }
+
+    .service .box-container .box .detail {
+        padding-left: 1rem;
+        width: 100%;
+    }
+
+    .service .box-container .box h4 {
+        font-size: 1.25rem;
+    }
+
+    .service .box-container .box .icon {
+        width: 100px;
+    }
+
+    /*----------home banner-----------*/
+    .home-banner {
+        padding: 0 20px;
+    }
+
+    .home-banner h1 {
+        font-size: 2rem;
+        letter-spacing: 0.15rem;
+    }
+
+    /*----------motivate container----------*/
+    .motivate-container .detail h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .motivate-container .detail p {
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+
+    /*---------variety 2---------*/
+    .variety2 .t-banner .detail {
+        top: 20%;
+        line-height: 1.25;
+    }
+
+    .variety2 .t-banner .detail p {
+        font-size: 18px;
+    }
+
+    .variety2 .t-banner .detail h1 {
+        font-size: 25px;
+        margin: 5px;
+    }
+
+    .variety2 .box-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .variety2 .box-container .box {
+        width: 90vw;
+        margin: 5px 0;
+    }
+
+    .hot-deal .box-container img {
+        width: 100vw;
+    }
+
+    .hot-deal .box-container .detail {
+        width: 100vw;
+    }
+
+    .hot-deal .box-container .detail h1 {
+        font-size: 2rem;
+    }
+
+    .hot-deal .box-container .detail p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .usage {
+        display: none;
+    }
+
+    /*----------variety section---------*/
+
+    .variety {
+        padding: 4% 3px;
+    }
+
+    .variety .box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .variety .box-container .box .detail {
+        top: 8%;
+        line-height: 1;
+        font-size: 7px;
+    }
+
+    .variety .box-container .box .detail h2 {
+        margin-inline: 10px;
+    }
+
+    .pride{
+        height: 80vh;
+    }
+
+    .pride .detail {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.newsletter .content{
+    width: 100vw;
+}
+
+.newsletter span {
+    font-size: .5rem;
+}
+
+.newsletter h1 {
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    margin: 10px 0;
+    margin-top: 30px;
+}
+
+.newsletter p{
+    font-size: 12px;
+    margin: 0 0;
+}
+
+.input-field input {
+    min-width: 150px;
+}
+
+.newsletter .box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
+footer {
+    padding: 50px 10px;
+}
+
+footer .content{
+    flex-wrap: wrap;
+}
+
+footer .content .box:first-child {
+    text-align: center;
+    width: 100%;
+}
+
+footer .bottom .btn{
+    font-size: 15px;
+}
+
+footer .bottom a {
+    margin-top: 10px;
+}
+
 }

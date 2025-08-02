@@ -191,6 +191,8 @@ if (isset($_COOKIE['user_id'])) {
         <h1>Made for <br> <span>Work . Play . All day</span></h1>
     </div>
 
+    <!-- variety section -->
+
     <div class="variety">
         <div class="heading">
             <span>Variety </span>
