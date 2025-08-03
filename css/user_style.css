@@ -2311,7 +2311,7 @@ footer .bottom a:hover {
 @media (max-width: 767px) {
 
     body {
-        background-color: #9cb3d3;
+        /* background-color: #9cb3d3; */
     }
 
 }
@@ -2319,7 +2319,7 @@ footer .bottom a:hover {
 /*-----------tablet---------*/
 @media (min-width: 768px) and (max-width: 1023px) {
     body {
-        background-color: #d39c9c;
+        /* background-color: #d39c9c; */
     }
 }
 
