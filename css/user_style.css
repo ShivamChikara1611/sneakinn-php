@@ -2310,17 +2310,13 @@ footer .bottom a:hover {
 /*-----------mobile------------*/
 @media (max-width: 767px) {
 
-    body {
-        /* background-color: #9cb3d3; */
-    }
+    
 
 }
 
 /*-----------tablet---------*/
 @media (min-width: 768px) and (max-width: 1023px) {
-    body {
-        /* background-color: #d39c9c; */
-    }
+    
 }
 
 
